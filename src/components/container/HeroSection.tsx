@@ -3,7 +3,6 @@
 import React from "react";
 import Image from "next/image";
 import heroImg from "../../assets/hero-img.svg";
-import { Button } from "@mantine/core";
 import Link from "next/link";
 
 export default function HeroSection() {
@@ -22,9 +21,9 @@ export default function HeroSection() {
           </div>
         </div>
         <div>
-          <Button variant="filled">
-            <Link href={"/dashboard"}>Contact</Link>
-          </Button>
+          <button>
+            <Link href={"/contact"}>Contact</Link>
+          </button>
         </div>
       </div>
       <div className="hidden sm:flex justify-end ">
