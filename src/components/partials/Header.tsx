@@ -2,6 +2,7 @@ import React from "react";
 import { Logo } from "./Logo";
 import Link from "next/link";
 import { navItems } from "@/utils/constants/navItems";
+import { Button } from "@mantine/core";
 
 export default function Header() {
   return (
@@ -17,7 +18,7 @@ export default function Header() {
         ))}
         <div className="text-green-300">
           <Link href={"/dashboard"}>
-            <button>Login</button>
+            <Button variant="outline">Login</Button>
           </Link>
         </div>
       </section>
