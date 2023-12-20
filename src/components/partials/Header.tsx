@@ -12,7 +12,10 @@ export default function Header() {
       </section>
       <section className="flex items-center gap-x-2 md:gap-7 ">
         {navItems.map((item, idx) => (
-          <div key={idx} className="text-md hover:text-blue-400">
+          <div
+            key={idx}
+            className="text-md  hover:text-primary hover:underline underline-offset-auto"
+          >
             <Link href={`${item.path}`}>{item.name}</Link>
           </div>
         ))}

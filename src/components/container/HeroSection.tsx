@@ -22,9 +22,9 @@ export default function HeroSection() {
           </div>
         </div>
         <div>
-          <Button variant="light">
-            <Link href={"/contact"}>Contact</Link>
-          </Button>
+          <Link href={"/contact"}>
+            <Button variant="light">Contact</Button>
+          </Link>
         </div>
       </div>
       <div className="hidden sm:flex justify-end ">
