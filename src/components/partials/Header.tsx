@@ -1,17 +1,27 @@
 import React from "react";
 import { Logo } from "./Logo";
 import Link from "next/link";
+import { navItems } from "@/utils/constants/navItems";
+import { Button, Divider } from "@mantine/core";
 
 export default function Header() {
   return (
-    <main className="flex justify-between p-4">
-      <div>
+    <main className="flex justify-between items-center px-10 py-4 shadow-sm sticky top-0 z-10 bg-white">
+      <section>
         <Logo />
-      </div>
-      <div> items</div>
-      <div className="text-green-300">
-        <Link href={"/dashboard"}>login</Link>
-      </div>
+      </section>
+      <section className="flex items-center gap-x-2 md:gap-7 ">
+        {navItems.map((item, idx) => (
+          <div key={idx} className="text-md hover:text-blue-400">
+            <Link href={`${item.path}`}>{item.name}</Link>
+          </div>
+        ))}
+        <div className="text-green-300">
+          <Link href={"/dashboard"}>
+            <Button variant="light">Login</Button>
+          </Link>
+        </div>
+      </section>
     </main>
   );
 }

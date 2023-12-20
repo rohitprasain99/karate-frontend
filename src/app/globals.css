@@ -1,4 +1,4 @@
-@tailwind base;
+/* @tailwind base; */
 @tailwind components;
 @tailwind utilities;
 
@@ -6,4 +6,17 @@ body {
 margin: 0;
 padding: 0;
 box-sizing: border-box;
+line-height: 1.5rem;
+}
+
+li {
+    padding-bottom: 0.4rem;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+.check{
+    border:2px solid red;
 }
